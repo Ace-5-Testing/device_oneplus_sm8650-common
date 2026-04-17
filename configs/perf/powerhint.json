@@ -508,6 +508,15 @@
             ],
             "DefaultIndex": 0,
             "ResetOnInit": true
+        },
+        {
+            "Name": "CPU7Online",
+            "Path": "/sys/devices/system/cpu/cpu7/online",
+            "Values": [
+                "0",
+                "1"
+            ],
+            "ResetOnInit": true
         }
     ],
     "Actions": [
@@ -1157,6 +1166,12 @@
             "PowerHint": "EXPENSIVE_RENDERING",
             "Node": "GPUMinFreq",
             "Value": "500000000",
+            "Duration": 0
+        },
+        {
+            "PowerHint": "LOW_POWER",
+            "Node": "CPU7Online",
+            "Value": "0",
             "Duration": 0
         }
     ]
