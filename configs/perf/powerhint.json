@@ -500,16 +500,6 @@
             "HoldFd": true
         },
         {
-            "Name": "GPUMinFreq",
-            "Path": "/sys/class/kgsl/kgsl-3d0/devfreq/min_freq",
-            "Values": [
-                "231000000",
-                "500000000"
-            ],
-            "DefaultIndex": 0,
-            "ResetOnInit": true
-        },
-        {
             "Name": "CPU7Online",
             "Path": "/sys/devices/system/cpu/cpu7/online",
             "Values": [
@@ -1161,12 +1151,6 @@
             "Node": "sysKernelMsmPerformanceParametersCpuMinFreq",
             "Value": "0:1574400 1:1574400 2:1286400 3:1286400 4:1286400 5:2131200 6:2131200 7:1593600",
             "Duration": 1000
-        },
-        {
-            "PowerHint": "EXPENSIVE_RENDERING",
-            "Node": "GPUMinFreq",
-            "Value": "500000000",
-            "Duration": 0
         },
         {
             "PowerHint": "LOW_POWER",
